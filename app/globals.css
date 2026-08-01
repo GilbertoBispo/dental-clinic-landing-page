@@ -1,26 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #1d6eb7;  /* Azul principal dos botões "Request Appointment" e "Book" */
+  --dark: #0f2847;     /* Azul escuro/marinho do título "We Create Healthy Smiles" */
+  --light: #3882c7;    /* Azul secundário dos botões menores das cards */
+  --bgGrad: #f0f7ff;   /* Azul congelado/suave do gradiente de fundo */
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--inter);
+  --font-plus-jakarta-sans: var(--plus-jakarta-sans);
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
+*/
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  font-family: var(--font-inter), sans-serif;
 }
