@@ -5,6 +5,7 @@
   --dark: #0f2847;     /* Azul escuro/marinho do título "We Create Healthy Smiles" */
   --light: #3882c7;    /* Azul secundário dos botões menores das cards */
   --bgGrad: #f0f7ff;   /* Azul congelado/suave do gradiente de fundo */
+  --text: #f8fafc;
 }
 
 @theme inline {
@@ -13,6 +14,10 @@
   --font-plus-jakarta-sans: var(--plus-jakarta-sans);
 }
 
+.blackOverlay {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+}
+  
 /*
 @media (prefers-color-scheme: dark) {
   :root {
