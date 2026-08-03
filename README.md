@@ -1,4 +1,4 @@
-# 🦷 ApexDental - Modern Dental Clinic Landing Page
+# 🦷 DentalClinic - Modern Dental Clinic Landing Page
 
 A high-converting, modern landing page designed for high-end dental practices. Built with a focus on fast performance, a seamless mobile experience, and effortless patient appointment scheduling.
 

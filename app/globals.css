@@ -8,7 +8,7 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --color-background: var(--bgGrad);
   --font-inter: var(--inter);
   --font-plus-jakarta-sans: var(--plus-jakarta-sans);
 }
@@ -23,7 +23,7 @@
 */
 
 body {
-  background: var(--background);
+  background: var(--bgGrad);
   color: var(--dark);
   font-family: var(--font-inter), sans-serif;
 }

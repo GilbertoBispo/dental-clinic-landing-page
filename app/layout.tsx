@@ -15,7 +15,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ApexDental",
+  title: "Dental Clinic",
   description: "A high-converting, modern landing page designed for high-end dental practices.",
 };
 
