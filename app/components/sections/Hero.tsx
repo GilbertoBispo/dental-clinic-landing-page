@@ -9,7 +9,7 @@ export default function Hero() {
                 <div className="absolute flex flex-col items-center justify-center gap-5">
                     <h2 className="text-4xl font-bold w-[80%] text-center text-shadow-lg text-(--text)">We Create Healthy <span className="text-sky-500">Smiles</span></h2>
                     <p className="w-[80%] text-center text-shadow-lg text-(--text)">Comprehensive, Friendly Dental Care for All Ages.</p>
-                    <Button>Request Appointment</Button>
+                    <Button className="">Request Appointment</Button>
                 </div>
             </section>
         </div>

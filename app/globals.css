@@ -14,10 +14,6 @@
   --font-plus-jakarta-sans: var(--plus-jakarta-sans);
 }
 
-.blackOverlay {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
-}
-  
 /*
 @media (prefers-color-scheme: dark) {
   :root {

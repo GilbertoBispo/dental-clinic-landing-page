@@ -34,11 +34,11 @@ export default function Header() {
                         <span className={`w-8 h-0.5 inline-block bg-(--dark) duration-200 ${isActive ? 'opacity-0' : 'bg-(--dark)'}`}></span>
                         <span className={`w-8 h-0.5 inline-block bg-(--dark) duration-200 ${isActive ? 'bg-(--dark) -rotate-45 -translate-y-3 duration-200' : 'bg-(--dark)'}`}></span>
                     </button>
-                </div>
+                </div>  
 
                 <div className={`fixed z-1 ${isActive ? 'shadow-lg flex flex-col items-center justify-start fixed top-0 left-0 h-full w-[85%] bg-white/30 backdrop-blur-sm transition-all duration-500 translate-x-0' : 'flex flex-col items-center justify-start fixed top-0 left-0 h-full w-[85%] bg-white/30 backdrop-blur-sm transition-all duration-500 -translate-x-full'}`}>
-                    <nav>
-                        <ul className="mt-10 flex flex-col gap-5 items-center font-bold text-xl">
+                    <nav className="h-full">
+                        <ul className="my-5 flex flex-col gap-5 items-center font-bold text-xl">
                             <li className="p-5 w-full text-center"><a href="">Home</a></li>
                             <li className="p-5 w-full text-center"><a href="">About Us</a></li>
                             <li className="p-5 w-full text-center"><a href="">Services</a></li>
