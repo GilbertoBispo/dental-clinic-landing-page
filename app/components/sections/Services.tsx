@@ -55,7 +55,7 @@ export default function Services() {
                 const description = service.description;
 
                 return(
-                    // utiliza a biblioteca framer-motion para a criação da animação de 
+                    // utiliza a biblioteca framer-motion para a criação da animação de Scroll Reveal
                     <motion.div
                         className="flex flex-col items-center gap-5"
                         key={index}
