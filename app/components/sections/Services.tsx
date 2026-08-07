@@ -55,7 +55,7 @@ export default function Services() {
                 const description = service.description;
 
                 return(
-                    // utiliza a biblioteca framer-motion para a criação da animação de 
+                    // utiliza a biblioteca framer-motion para a criação da animação de Scroll Reveal
                     <motion.div
                         className="flex flex-col items-center gap-5"
                         key={index}
@@ -64,7 +64,7 @@ export default function Services() {
                         viewport={{once: true, margin: "-15px"}}
                         transition={{duration: 0.4, delay: 0.3}}>
 
-                        <Cards className="flex flex-col p-5 gap-5 text-shadow-lg">
+                        <Cards className="flex flex-col p-5 gap-5 text-shadow-lg w-[90%]">
                             <div className="flex justify-between items-center">
                                 <img className="w-20" src={`${icon}.svg`} alt="sparkles icon"/>
                                 <h3 className="flex-1 text-center flex flex-col justify-center text-2xl h-20"><strong>{title}</strong></h3>

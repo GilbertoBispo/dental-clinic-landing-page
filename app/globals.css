@@ -14,6 +14,16 @@
   --font-plus-jakarta-sans: var(--plus-jakarta-sans);
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer e Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
 /*
 @media (prefers-color-scheme: dark) {
   :root {
