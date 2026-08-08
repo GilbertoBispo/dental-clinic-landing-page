@@ -24,6 +24,11 @@
   }
 }
 
+.bg-image {
+  background-image: url("../public/testemonials-cover.jpg");
+
+}
+
 /*
 @media (prefers-color-scheme: dark) {
   :root {
