@@ -26,4 +26,4 @@ A high-converting, modern landing page designed for high-end dental practices. B
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/apex-dental-clinic.git](https://github.com/your-username/apex-dental-clinic.git)
+   git clone https://github.com/GilbertoBispo/dental-clinic-landing-page.git
