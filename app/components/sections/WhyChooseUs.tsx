@@ -1,7 +1,7 @@
 export default function WhyChooseUs() {
     return (
         <section className="flex flex-col items-center relative bg-gray-500/90 h-82.5">
-            <img src="/hero2.jpg" alt="dentist 2" className="object-cover mask-b-from-1%"/>
+            <img src="/hero2.jpg" alt="dentist 2" className="object-cover mask-b-from-1% h-full w-full"/>
 
             <div className="w-full h-full absolute bg-slate-950/40">
             
