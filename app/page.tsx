@@ -5,6 +5,8 @@ import WhyChooseUs from "./components/sections/WhyChooseUs";
 import Reasons from "./components/sections/Reasons";
 import TestimonialsHeader from "./components/sections/TestimonialsHeader";
 import Testimonials from "./components/sections/Testimonials";
+import FAQ from "./components/sections/FAQ";
+import FAQList from "./components/sections/FAQList";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
           <Reasons></Reasons>
           <TestimonialsHeader></TestimonialsHeader>
           <Testimonials></Testimonials>
+          <FAQ></FAQ>
+          <FAQList></FAQList>
         </main>
       </>
   );
