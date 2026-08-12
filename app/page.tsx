@@ -8,11 +8,15 @@ import Testimonials from "./components/sections/Testimonials";
 import FAQ from "./components/sections/FAQ";
 import FAQList from "./components/sections/FAQList";
 import Appointment from "./components/sections/Appointment";
+import ContactAndLocation from "./components/sections/ContactAndLocation";
 
 export default function Home() {
   return (
       <>
-        <Header></Header>
+        <header>
+          <Header></Header>
+        </header>
+
         <main>
           <Hero></Hero>
           <Services></Services>
@@ -24,6 +28,10 @@ export default function Home() {
           <FAQList></FAQList>
           <Appointment></Appointment>
         </main>
+
+        <footer>
+          <ContactAndLocation></ContactAndLocation>
+        </footer>
       </>
   );
 }

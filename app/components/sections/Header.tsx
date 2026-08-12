@@ -25,7 +25,7 @@ export default function Header() {
     }
 
     return (
-        <header>
+        <div>
             <Boxes className="flex">
                 <img src="/logotype2.png" alt="Dental Clinic logotype" className="w-40 h-16"/>
                 <div className="w-full flex items-center justify-end px-2.5">
@@ -48,6 +48,6 @@ export default function Header() {
                     </nav>
                 </div>
             </Boxes>
-        </header>
+        </div>
     );
 }
