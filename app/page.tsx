@@ -7,6 +7,7 @@ import TestimonialsHeader from "./components/sections/TestimonialsHeader";
 import Testimonials from "./components/sections/Testimonials";
 import FAQ from "./components/sections/FAQ";
 import FAQList from "./components/sections/FAQList";
+import Appointment from "./components/sections/Appointment";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <Testimonials></Testimonials>
           <FAQ></FAQ>
           <FAQList></FAQList>
+          <Appointment></Appointment>
         </main>
       </>
   );
