@@ -8,6 +8,10 @@
   --text: #f8fafc;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme inline {
   --color-background: var(--bgGrad);
   --font-inter: var(--inter);
@@ -28,7 +32,6 @@
   background-image: url("../public/testemonials-cover.jpg");
 
 }
-
 
 /*
 @media (prefers-color-scheme: dark) {

@@ -9,6 +9,7 @@ import FAQ from "./components/sections/FAQ";
 import FAQList from "./components/sections/FAQList";
 import Appointment from "./components/sections/Appointment";
 import ContactAndLocation from "./components/sections/ContactAndLocation";
+import Footer from "./components/sections/Footer";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
 
         <footer>
           <ContactAndLocation></ContactAndLocation>
+          <Footer></Footer>
         </footer>
       </>
   );

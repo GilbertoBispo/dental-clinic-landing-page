@@ -1,6 +1,6 @@
 export default function TestemonialsHeader() {
     return (
-        <section className="flex flex-col items-center relative bg-gray-500/90 h-82.5">
+        <section id="testimonials" className="flex flex-col items-center relative bg-gray-500/90 h-82.5">
             <img src="/hero3.jpg" alt="dentist 2" className="object-cover mask-b-from-1%"/>
 
             <div className="w-full h-full absolute bg-slate-950/40">
