@@ -40,7 +40,7 @@ export default function Services() {
     ];
 
     return (
-        <section className="flex flex-col items-center gap-5 my-5 w-full">
+        <section id="services" className="flex flex-col items-center gap-5 py-5 w-full">
             <div className="text-center text-shadow-lg">
                 <h2 className="font-black text-3xl">Our Services</h2>
                 <p className="font-semibold">High-Quality Care for Your Smile</p>

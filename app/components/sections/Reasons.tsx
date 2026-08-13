@@ -49,7 +49,7 @@ export default function Reasons() {
                             viewport={{once: true, margin: "-15px"}}
                             transition={{duration: 0.4, delay: 0.3}}>
 
-                            <Cards className="flex flex-col p-5 gap-5 text-shadow-lg w-80 h-80">
+                            <Cards className="flex flex-col p-5 gap-5 text-shadow-lg w-[80vw] h-80">
                                 <div className="flex justify-between items-center">
                                     <img className="w-20" src={`${icon}.svg`} alt="sparkles icon"/>
                                     <h3 className="flex-1 text-center flex flex-col justify-center text-2xl h-20"><strong>{title}</strong></h3>

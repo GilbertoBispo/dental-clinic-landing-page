@@ -40,7 +40,7 @@ export default function FAQList() {
                     return (
 
                         <details  key={index} className="flex flex-col group border-[2px_0px_0px_0px] last:border-[2px_0px_2px_0px] border-(--dark)">
-                            <summary className="p-5 font-bold text-xl transition-all duration-500 list-none"><span className="inline-block transition-all duration-500 group-open:rotate-90 text-2xl text-bold"> → </span> "{theQuestion}"</summary>
+                            <summary className="p-5 font-bold text-xl transition-all duration-500 list-none"><span className="inline-block transition-all duration-500 group-open:rotate-90 text-2xl text-bold"> <img src="/chevron-right.svg" alt="chevron icon" /> </span> "{theQuestion}"</summary>
                             
                             <ul className="p-5">
                                 <li className="opacity-0 h-0 grid group-open:transition-all group-open:duration-300 group-open:delay-150 group-open:ease-in-out group-open:opacity-100 group-open:h-fit">{theAnswer}</li>
