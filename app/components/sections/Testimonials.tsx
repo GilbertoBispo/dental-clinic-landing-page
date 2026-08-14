@@ -59,7 +59,7 @@ export default function Testimonials(){
                                 whileInView={{ opacity: 1 }}
                                 viewport={{once: true, margin: "-15px"}}
                                 transition={{duration: 0.2, delay: 0.3}}>
-                                <Cards className="flex flex-col p-5 gap-5 text-shadow-lg w-[80vw] h-full bg-white/40 backdrop-blur-md z-10 border border-white lg:w-92.5 lg:mx-0">
+                                <Cards className="flex flex-col p-5 gap-5 text-shadow-lg w-[80vw] h-full bg-white/40 backdrop-blur-md z-10 border border-white lg:w-92.5 lg:mx-0 2xl:w-120">
                                     <div className="flex flex-col justify-between items-center gap-2">
                                         <img className="w-20 rounded-full" src={`${avatar}.jpg`} alt="sparkles icon"/>
                                         <h3 className="flex-1 text-center flex flex-col justify-center text-2xl h-20"><strong>{nome}</strong></h3>
