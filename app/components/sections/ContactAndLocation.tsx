@@ -34,31 +34,37 @@ export default function ContactAndLocation() {
             <h2 className="text-3xl">Contact & Location</h2>
 
             {/* renderiza os cards usando o método Array.map() utilizando as informações */}
-            {cards.map((card, index) => {
-                // criando constantes com os atributos 
-                const icon = card.icon
-                const title = card.title
-                const info1 = card.info1
-                const info2 = card.info2
-                const info3 = card.info3
+            <div className="flex flex-col items-center gap-5 lg:grid lg:grid-cols-2">
+                {cards.map((card, index) => {
+                    // criando constantes com os atributos
+                    const icon = card.icon
+                    const title = card.title
+                    const info1 = card.info1
+                    const info2 = card.info2
+                    const info3 = card.info3
 
-                return (
-                    <motion.div
-                        key={index}
-                        initial={{opacity: 0, y: 50}}
-                        viewport={{once: true, margin: "-50px"}}
-                        whileInView={{opacity: 1, y: 0}}
-                        transition={{duration: 0.4, delay: 0.3}}
-                    >
-                        <div className="bg-white flex flex-col gap-5 w-[80vw] p-5 rounded-lg shadow-lg text-shadow-lg">
-                            <h2 className="text-xl font-bold flex gap-2.5"><img src={`/${icon}.svg`} alt="information card icon" />{title}</h2>
-                            <p>{info1}</p>
-                            <p>{info2}</p>
-                            <p>{info3}</p>
-                        </div>
-                    </motion.div>
-                );
-            })}
+                    // verifica se é o último card
+                    const isLast = index === cards.length - 1;
+                    
+                    return (
+                        <motion.div
+                            key={index}
+                            initial={{opacity: 0, y: 50}}
+                            viewport={{once: true, margin: "-50px"}}
+                            whileInView={{opacity: 1, y: 0}}
+                            transition={{duration: 0.4, delay: 0.3}}
+                            className={`w-fit h-fit ${isLast ? 'lg:col-span-2 lg:justify-self-center' : '' }`}
+                        >
+                            <div className="bg-white flex flex-col gap-5 w-[80vw] p-5 rounded-lg shadow-lg text-shadow-lg lg:w-102.5">
+                                <h2 className="text-xl font-bold flex gap-2.5"><img src={`/${icon}.svg`} alt="information card icon" />{title}</h2>
+                                <p>{info1}</p>
+                                <p>{info2}</p>
+                                <p>{info3}</p>
+                            </div>
+                        </motion.div>
+                    );
+                })}
+            </div>
 
         </section>
     );

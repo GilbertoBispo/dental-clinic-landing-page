@@ -10,7 +10,7 @@ export default function Appointment() {
 
                 <div className="flex flex-col items-center gap-5 lg:flex-row">
                     <Button className="">Schedule Your Visit</Button>
-                    <Button className="bg-[#25D366] flex justify-between"><img className="w-6 h-6 mr-2" src="/whatsapp.svg" alt="whatsapp icon" /> Chat on WhatsApp</Button>
+                    <Button className="bg-[#25D366] flex justify-between hover:bg-[#56f791]"><img className="w-6 h-6 mr-2" src="/whatsapp.svg" alt="whatsapp icon" /> Chat on WhatsApp</Button>
                 </div>
             </div>
         </section>
