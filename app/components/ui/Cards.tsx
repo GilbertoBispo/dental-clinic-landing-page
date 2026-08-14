@@ -7,7 +7,7 @@ interface typeCardProps {
 
 export default function Cards({ children, className }: typeCardProps) {
     return (
-        <div className={`bg-white  h-fit rounded-[10px] shadow-lg ${className}`}>
+        <div className={`bg-white rounded-[10px] shadow-lg ${className}`}>
             { children }
         </div>
     );

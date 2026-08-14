@@ -1,13 +1,13 @@
 export default function TestemonialsHeader() {
     return (
         <section id="testimonials" className="flex flex-col items-center relative bg-gray-500/90 h-82.5">
-            <img src="/hero3.jpg" alt="dentist 2" className="object-cover mask-b-from-1%"/>
+            <img src="/hero3.jpg" alt="dentist 2" className="object-cover object-center inset-0 h-full w-full mask-b-from-1%"/>
 
-            <div className="w-full h-full absolute bg-slate-950/40">
+            <div className="flex w-full h-full absolute bg-slate-950/40 justify-center">
             
                 <div className="absolute flex flex-col items-center p-5 justify-around z-10 h-full">
 
-                    <h2 className="text-center text-3xl text-shadow-lg font-extrabold w-full text-(--text)">Patient <span className="text-sky-500 w-fit">Testemonials</span></h2>
+                    <h2 className="text-center text-3xl text-shadow-lg font-extrabold w-full text-(--text)">Patient <span className="text-sky-500 w-fit">Testimonials</span></h2>
 
                     <h3 className="text-center  text-shadow-lg font-bold w-full text-(--text)">Real Stories, Real Smiles</h3>
 

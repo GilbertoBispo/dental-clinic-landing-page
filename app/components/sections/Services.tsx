@@ -41,41 +41,43 @@ export default function Services() {
 
     return (
         <section id="services" className="flex flex-col items-center gap-5 py-5 w-full">
+
+            {/* título da seção */}
             <div className="text-center text-shadow-lg">
                 <h2 className="font-black text-3xl">Our Services</h2>
                 <p className="font-semibold">High-Quality Care for Your Smile</p>
             </div>
 
-            {/* utiliza o método .map() para renderizar cada card */}
-            {SERVICES.map((service, index) => {
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 w-full justify-items-center gap-y-5 2xl:w-fit 2xl:h-fit 2xl:gap-5">
+                {/* utiliza o método .map() para renderizar cada card */}
+                {SERVICES.map((service, index) => {
+                    // cada atributo do objeto SERVICES vira uma constante
+                    const icon = service.icon;
+                    const title = service.title;
+                    const description = service.description;
 
-                // cada atributo do objeto SERVICES vira uma constante
-                const icon = service.icon;
-                const title = service.title;
-                const description = service.description;
+                    return(
+                        // utiliza a biblioteca framer-motion para a criação da animação de Scroll Reveal
+                        <motion.div
+                            className="flex flex-col items-center w-fit"
+                            key={index}
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0}}
+                            viewport={{once: true, margin: "-15px"}}
+                            transition={{duration: 0.4, delay: 0.3}}>
+                            <Cards className="flex flex-col p-5 gap-5 text-shadow-lg w-[90%] md:w-[45vw] md:h-full lg:w-[31vw] 2xl:w-120">
+                                <div className="flex justify-between items-center">
+                                    <img className="w-20" src={`${icon}.svg`} alt="sparkles icon"/>
+                                    <h3 className="flex-1 text-center flex flex-col justify-center text-2xl h-20"><strong>{title}</strong></h3>
+                                </div>
+                                <p className="text-lg">{description}</p>
+                                <a className="cursor-pointer underline text-(--light) w-fit py-2 px-5">Learn More →</a>
+                            </Cards>
+                        </motion.div>
+                    );
+                })}
 
-                return(
-                    // utiliza a biblioteca framer-motion para a criação da animação de Scroll Reveal
-                    <motion.div
-                        className="flex flex-col items-center gap-5"
-                        key={index}
-                        initial={{ opacity: 0, y: 100 }}
-                        whileInView={{ opacity: 1, y: 0}}
-                        viewport={{once: true, margin: "-15px"}}
-                        transition={{duration: 0.4, delay: 0.3}}>
-
-                        <Cards className="flex flex-col p-5 gap-5 text-shadow-lg w-[90%]">
-                            <div className="flex justify-between items-center">
-                                <img className="w-20" src={`${icon}.svg`} alt="sparkles icon"/>
-                                <h3 className="flex-1 text-center flex flex-col justify-center text-2xl h-20"><strong>{title}</strong></h3>
-                            </div>
-                            <p className="text-lg">{description}</p>
-                            <a className="cursor-pointer underline text-(--light) w-fit py-2 px-5">Learn More →</a>
-                        </Cards>
-
-                    </motion.div>
-                );
-            })}
+            </div>
         </section>
     );
 }
