@@ -31,25 +31,27 @@ export default function FAQList() {
 
     return(
         <section className="p-5 flex flex-col">
-            {
-                questions.map((question, index) => {
-
-                    const theQuestion = question.q;
-                    const theAnswer = question.a
-
-                    return (
-
-                        <details  key={index} className="flex flex-col group border-[2px_0px_0px_0px] last:border-[2px_0px_2px_0px] border-(--dark)">
-                            <summary className="p-5 font-bold text-xl transition-all duration-500 list-none"><span className="inline-block transition-all duration-500 group-open:rotate-90 text-2xl text-bold"> <img src="/chevron-right.svg" alt="chevron icon" /> </span> "{theQuestion}"</summary>
-                            
-                            <ul className="p-5">
-                                <li className="opacity-0 h-0 grid group-open:transition-all group-open:duration-300 group-open:delay-150 group-open:ease-in-out group-open:opacity-100 group-open:h-fit">{theAnswer}</li>
-                            </ul>
-                        </details>
-
-                    );
-                })
-            }
+            <div className="xl:grid xl:grid-cols-2 xl:gap-x-5">
+                {
+                    questions.map((question, index) => {
+                        // veirifica se "index" é igual ao índice especificado
+                        const isPenult = index === questions.length - 2
+                        // captura as informações dos objetos do array
+                        const theQuestion = question.q;
+                        const theAnswer = question.a
+                        
+                        return (
+                            <details key={index} className={`${isPenult ? 'xl:border-[2px_0px_2px_0px]' : ''} flex flex-col justify-center group border-[2px_0px_0px_0px] last:border-[2px_0px_2px_0px] border-(--dark)`}>
+                                <summary className="p-5 font-bold text-xl transition-all duration-500 list-none h-fit w-full"><span className="inline-block transition-all duration-500 group-open:rotate-90 text-2xl text-bold"> <img src="/chevron-right.svg" alt="chevron icon" /> </span> "{theQuestion}"</summary>
+                
+                                <ul className="p-5">
+                                    <li className="opacity-0 h-0 grid group-open:transition-all group-open:duration-300 group-open:delay-150 group-open:ease-in-out group-open:opacity-100 group-open:h-fit">{theAnswer}</li>
+                                </ul>
+                            </details>
+                        );
+                    })
+                }
+            </div>
         </section>
     );
 }
