@@ -33,23 +33,23 @@ export default function Footer() {
             {/* Título do footer */}
             <div className="flex flex-col items-center gap-5">
                 <img src="/logotype2.png" alt="Dental Clinic Logo" />
-                <p className="w-[90vw] text-center font-bold">Providing compassionate, high-quality dental care for the whole family. Your smile is our top priority.</p>
+                <p className="w-[90vw] text-center font-bold xl:w-fit">Providing compassionate, high-quality dental care for the whole family. Your smile is our top priority.</p>
             </div>
 
             {/* Subseção de navegação */}
-            <div className="p-5 md:py-5 md:px-0 border-y border-slate-400/60 md:w-full flex flex-col gap-5">
+            <div className="p-5 md:py-5 md:px-0 border-y border-slate-400/60 md:w-full flex flex-col gap-5 xl:items-center">
 
                 <p className="font-bold text-center">Navigation</p>
 
                 {/* Renderiza cada link a partir do array de objeto "link" usando o método Array.map() */}
-                <ul className="grid grid-cols-2 gap-5">
+                <ul className="grid grid-cols-2 gap-5 xl:w-200 xl:justify-items-center">
                 
                     {links.map((link, index) => {
                         const sectionLink = link.link
                         const text = link.text
 
                         return(
-                            <li key={index} className="p-5"><a className="hover:underline cursor-pointer" href={`${sectionLink}`}>{text}</a></li>
+                            <li key={index} className="p-5 xl:w-fit"><a className="hover:underline cursor-pointer hover:text-(--light)" href={`${sectionLink}`}>{text}</a></li>
                         );
                     })}
                 </ul>
