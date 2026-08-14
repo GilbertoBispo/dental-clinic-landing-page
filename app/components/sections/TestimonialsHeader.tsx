@@ -7,7 +7,7 @@ export default function TestemonialsHeader() {
             
                 <div className="absolute flex flex-col items-center p-5 justify-around z-10 h-full">
 
-                    <h2 className="text-center text-3xl text-shadow-lg font-extrabold w-full text-(--text)">Patient <span className="text-sky-500 w-fit">Testemonials</span></h2>
+                    <h2 className="text-center text-3xl text-shadow-lg font-extrabold w-full text-(--text)">Patient <span className="text-sky-500 w-fit">Testimonials</span></h2>
 
                     <h3 className="text-center  text-shadow-lg font-bold w-full text-(--text)">Real Stories, Real Smiles</h3>
 
