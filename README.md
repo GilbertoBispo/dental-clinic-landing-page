@@ -8,7 +8,6 @@ A high-converting, modern landing page designed for high-end dental practices. B
 
 - **📱 Mobile-First Design:** Fully responsive layout tailored for smartphones and tablets, where the majority of local patient searches happen.
 - **⚡ Performance & SEO:** Built with SSR (Server-Side Rendering) for instant load times and optimal search engine ranking.
-- **📅 Appointment Scheduling:** Streamlined lead-capture form for booking requests and patient inquiries.
 - **🛠️ Service Showcase:** Clean, engaging sections for dental procedures (cosmetics, orthodontics, implants) and patient testimonials.
 
 ---
@@ -27,5 +26,3 @@ A high-converting, modern landing page designed for high-end dental practices. B
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/GilbertoBispo/dental-clinic-landing-page.git
-
-Note: For now, only the layout for mobile devices has been developed.
